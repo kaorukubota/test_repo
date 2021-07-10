@@ -1,0 +1,46 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug current file",
+            "type": "ruby-byebug",
+            "request": "launch",
+            "program": "${file}"
+        },
+        {
+            "type": "ruby-debug",
+            "request": "launch",
+            "name": "Active File",
+            "program": "${file}",
+            "programArgs": [],
+            "useBundler": false
+        },
+        {
+            "name": "Debug Local File",
+            "type": "Ruby",
+            "request": "launch",
+            "program": "/Users/kaoru/Documents/AWS/ruby/main.rb",
+            "pathToRDebugIDE": "/Users/kaoru/.rbenv/shims/rdebug-ide",
+         },
+         {
+            "name": "Debug Test",
+            "type": "Ruby",
+            "cwd": "${workspaceRoot}",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.rb",
+            
+         },
+         {
+            "name": "Rubyデバッグ",
+            "type": "Ruby",
+            "cwd": "${fileDirname}",
+            "request": "launch",
+            "program": "${file}",
+            
+         },
+    ]
+}
